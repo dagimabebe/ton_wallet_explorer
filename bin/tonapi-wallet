@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require 'thor'
+require 'tonapi_wallet'
+
+class CLI < Thor
+  desc "balance ADDRESS", "Fetch wallet balance"
+  def balance(address)
+    wallet = TonapiWallet.fetch(address)
+    puts wallet.to_json
+  end
+end
+
+CLI.start(ARGV)
