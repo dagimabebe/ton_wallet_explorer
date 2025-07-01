@@ -1,0 +1,19 @@
+[package]
+name = "tonapi_wallet_explorer"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+clap = { version = "4.0", features = ["derive"] }
+config = "0.13"
+dotenv = "0.15"
+colored = "2.0"         
+tabled = "0.10"       
+
+[dev-dependencies]
+wiremock = "0.5"         
