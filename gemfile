@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+gem 'httparty', '~> 0.21'
+gem 'thor', '~> 1.2'     #For CLI
+gem 'rspec', '~> 3.0'    #testing stuff
